@@ -49,7 +49,7 @@ public class RecordsFragment extends Fragment {
 
         toplamSayfa = listRecord.size()%10 == 0 ? listRecord.size()/10 : (listRecord.size()/10)+1;
 
-        recyclerView = view.findViewById(R.id.recycler_view);
+        recyclerView = (RecyclerView) view.findViewById(R.id.recycler_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         recyclerView.addItemDecoration(new DividerItemDecoration(getActivity(), LinearLayoutManager.VERTICAL));
         recyclerView.setItemAnimator(new DefaultItemAnimator());

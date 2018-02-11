@@ -54,11 +54,11 @@ public class AdapterRecords extends RecyclerView.Adapter<RecyclerView.ViewHolder
         public RecordViewHolder(View itemView) {
             super(itemView);
 
-            tvId = itemView.findViewById(R.id.tv_record_id);
-            tvCount = itemView.findViewById(R.id.tv_record_count);
-            tvKey = itemView.findViewById(R.id.tv_record_key);
-            tvValue = itemView.findViewById(R.id.tv_record_value);
-            tvDate = itemView.findViewById(R.id.tv_record_date);
+            tvId = (TextView) itemView.findViewById(R.id.tv_record_id);
+            tvCount = (TextView) itemView.findViewById(R.id.tv_record_count);
+            tvKey = (TextView) itemView.findViewById(R.id.tv_record_key);
+            tvValue = (TextView) itemView.findViewById(R.id.tv_record_value);
+            tvDate = (TextView) itemView.findViewById(R.id.tv_record_date);
 
         }
     }
