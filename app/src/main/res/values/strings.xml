@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Getir Bitaksi Hackathon</string>
+    <string name="ileri">İleri</string>
+    <string name="geri">Geri</string>
+    <string name="getir">Getir</string>
+    <string name="start_date">Başlangıç Tarihi</string>
+    <string name="end_date">Bitiş Tarihi</string>
+    <string name="min_count">En Düşük Değer</string>
+    <string name="max_count">En Yüksek Değer</string>
+    <string name="seciniz">Seçiniz</string>
+</resources>

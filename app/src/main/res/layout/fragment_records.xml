@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_ileri"
+        android:layout_alignParentTop="true"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EEEEEE"
+        android:layout_below="@id/recycler_view"
+        android:layout_alignParentBottom="true"/>
+
+    <LinearLayout
+        android:id="@+id/ll_stepper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/btn_geri"
+        android:layout_toLeftOf="@+id/btn_ileri"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="visible"
+        android:layout_below="@+id/recycler_view">
+
+        <TextView
+            android:id="@+id/tv_ilerleme_aciklama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_above="@+id/progressBar3"
+            android:textSize="11sp"
+            android:gravity="center"/>
+
+        <ProgressBar
+            android:id="@+id/pb_ilerleme"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progress="1"
+            android:visibility="visible"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:id="@+id/btn_ileri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/ileri"
+        android:textColor="@color/colorPrimaryDark"
+        android:drawableRight="@drawable/ic_chevron_right_black_24dp"
+        android:drawableTint="@color/colorPrimaryDark"/>
+
+    <android.support.v7.widget.AppCompatButton
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:id="@+id/btn_geri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/geri"
+        android:textColor="@color/colorPrimaryDark"
+        android:visibility="visible"
+        android:drawableLeft="@drawable/ic_chevron_left_black_24dp"
+        android:drawableTint="@color/colorPrimaryDark"/>
+</RelativeLayout>
+
+
